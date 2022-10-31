@@ -9,6 +9,7 @@ var Bee = function() {
 
 };
 //create relationship between Bee and Grub
-Bee.prototype = Object.create(Grub.prototype);
+//can just use new, don't have to Object.create(Grub.prototype);
+Bee.prototype = new Grub;
 //initialize constructor that points back at constructor
 Bee.prototype.constructor = Bee;
