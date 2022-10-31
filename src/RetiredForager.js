@@ -8,7 +8,8 @@ var RetiredForagerBee = function() {
 
 };
 
-RetiredForagerBee.prototype = new ForagerBee;
+// RetiredForagerBee.prototype = new ForagerBee;
+RetiredForagerBee.prototype = Object.create(ForagerBee.prototype);
 RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 
 RetiredForagerBee.prototype.forage = function () {
